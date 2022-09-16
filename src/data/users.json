@@ -1,0 +1,74 @@
+[
+  {
+    "userName": "Rocko",
+    "userLastName": "Ponce",
+    "userEmail": "rocko@gmail.com",
+    "password": "$2a$10$hIrKMPgE6kGKtYk5n6Wn5e9efqDMmEtIi8hE0WXc6GADsAW3VmmiK",
+    "id": "ee440e3d-6a23-425b-8440-38c47e9566dd",
+    "avatar": {
+      "fieldname": "avatar",
+      "originalname": "homero.jpeg",
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "destination": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/users",
+      "filename": "avatar-1658603586256.jpeg",
+      "path": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/users/avatar-1658603586256.jpeg",
+      "size": 38037
+    },
+    "isAdmin": false
+  },
+  {
+    "userName": "Usuario",
+    "userLastName": "Administrador",
+    "userEmail": "admin@admin.com",
+    "password": "$2a$10$t97ope1mI/FestUpxAV0ZedL5gXSHKYaLpubQMft/8qQZ/cZpygai",
+    "id": "bb14cdd4-4219-4e68-aa95-81f8ef3da130",
+    "avatar": {
+      "fieldname": "avatar",
+      "originalname": "anonymus.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/users",
+      "filename": "avatar-1658617998555.png",
+      "path": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/users/avatar-1658617998555.png",
+      "size": 12655
+    },
+    "isAdmin": true
+  },
+  {
+    "userName": "Lucia",
+    "userLastName": "Haidr",
+    "userEmail": "lucia@haidr.com",
+    "password": "$2a$10$2AfHYUvhaMyO36lvHToYc.25Qn/w.UxqTa24ccbvgaD3lnkShBuYm",
+    "id": "5aa2fc89-1c26-470a-9ca5-bd1331444827",
+    "avatar": {
+      "fieldname": "avatar",
+      "originalname": "orange-t-shirt.png",
+      "encoding": "7bit",
+      "mimetype": "image/png",
+      "destination": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/users",
+      "filename": "avatar-1658876874552.png",
+      "path": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/users/avatar-1658876874552.png",
+      "size": 186609
+    },
+    "isAdmin": false
+  },
+  {
+    "userName": "Javier",
+    "userLastName": "Amarilla",
+    "userEmail": "javier@amarilla.com",
+    "password": "$2a$10$46S85MhwH/djJuRrpHKzyeQE66Tm7sHfZJhHx790AbXu2xHhlvWnW",
+    "id": "d8f786a0-7f04-4ec3-bdc5-120a401e144b",
+    "avatar": {
+      "fieldname": "avatar",
+      "originalname": "homero.jpeg",
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "destination": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/users",
+      "filename": "avatar-1659035557578.jpeg",
+      "path": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/users/avatar-1659035557578.jpeg",
+      "size": 38037
+    },
+    "isAdmin": false
+  }
+]

@@ -1,0 +1,44 @@
+h3 {
+  text-align: center;
+}
+
+form {
+  width: 85%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+input {
+  height: 30px;
+  width: 80%;
+  margin: 10px auto;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+input:focus {
+  outline: none;
+}
+label {
+  text-align: center;
+}
+
+.remember {
+  width: 20px;
+}
+
+button {
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.error-msg {
+  color: red;
+  text-align: center;
+}

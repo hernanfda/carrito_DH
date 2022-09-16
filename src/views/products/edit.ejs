@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+  <body>
+    <%- include('../partials/navbar') %>
+
+    <h3>Formulario de Edicion de Producto</h3>
+
+    <form action="/products/edit/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+      <% if (locals.errors && locals.errors.title) { %>
+      <span class="error-msg"><%= locals.errors.title.msg %></span>
+      <% } %>
+      <input
+        type="text"
+        placeholder="titulo"
+        name="title"
+        id="title"
+        value="<%= product.title%>"
+      />
+
+      <% if (locals.errors && locals.errors.price) { %>
+      <span class="error-msg"><%= locals.errors.price.msg %></span>
+      <% } %>
+      <input
+        type="number"
+        placeholder="precio"
+        name="price"
+        id="price"
+        value="<%= product.price%>"
+      />
+
+      <select name="currency" id="currency">
+        <option value="U$D">U$D</option>
+        <option value="AR$">AR$</option>
+      </select>
+
+      <select name="category" id="category">
+        <option value="technology">Tecnologia</option>
+        <option value="sports">Deportes</option>
+        <option value="clothes">Ropa</option>
+        <option value="home-article">Hogar</option>
+      </select>
+
+      <% if (locals.errors && locals.errors.description) { %>
+      <span class="error-msg"><%= locals.errors.description.msg %></span>
+      <% } %>
+      <textarea placeholder="descripcion" name="description" id="description"><%= product.description%></textarea>
+
+      <% if (locals.errors && locals.errors.images) { %>
+      <span class="error-msg"><%= locals.errors.images.msg %></span>
+      <% } %>
+      <input type="file" name="images" multiple />
+
+      <button type="submit">Editar</button>
+    </form>
+  </body>
+</html>

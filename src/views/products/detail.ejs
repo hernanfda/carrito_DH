@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+  <body>
+    <%- include('../partials/navbar') %>
+
+    <div class="container">
+      <h3><%= title %></h3>
+
+      <div class="price-container">
+        <span><%= filteredProduct.currency %></span>
+        <p class="price"><%= filteredProduct.price %></p>
+      </div>
+
+      <% if(locals.user && locals.user.isAdmin == true) { %>
+      <a
+        href="/products/edit/<%= filteredProduct.id %>"
+        class="link btn btn-edit"
+        >Editar Producto</a
+      >
+      <% } %> <% if(locals.user && locals.user.isAdmin == true) { %>
+      <form
+        action="/products/delete/<%= filteredProduct.id %>?_method=DELETE"
+        method="POST"
+      >
+        <button type="submit" class="link btn btn-delete">
+          Borrar Producto
+        </button>
+      </form>
+      <% } %>
+
+      <div class="img-container" id="image-container">
+        <button id="prev-btn"><</button>
+        <% filteredProduct.images.forEach((image, i) => { %>
+
+        <img
+          src="/img/products/<%= image.filename %> "
+          id="<%= i %>"
+          alt="<%= filteredProduct.title %>"
+        />
+
+        <% }) %>
+        <button id="next-btn">></button>
+      </div>
+
+      <p class="description"><%= filteredProduct.description %></p>
+
+      <a id="btn-buy" class="link btn btn-buy" href="#">Agregar</a>
+    </div>
+
+    <script src="/javascript/addProductToCart.js"></script>
+    <script src="/javascript/carousel.js"></script>
+  </body>
+</html>

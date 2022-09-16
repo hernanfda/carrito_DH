@@ -1,0 +1,102 @@
+[
+ {
+  "title": "iphone 13",
+  "price": "4000",
+  "currency": "U$D",
+  "category": "technology",
+  "description": "celular iphone 13",
+  "id": "8000c95f-6542-421e-a4b3-46fcc468578c",
+  "images": [
+   {
+    "fieldname": "image",
+    "originalname": "Apple_HowToBuy_iPhone-13_GEO_09162021_carousel.jpg.slideshow-xlarge.jpg",
+    "encoding": "7bit",
+    "mimetype": "image/jpeg",
+    "destination": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/products",
+    "filename": "image-1658092597129.jpg",
+    "path": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/products/image-1658092597129.jpg",
+    "size": 142370
+   },
+   {
+    "fieldname": "image",
+    "originalname": "Apple_HowToBuy_iPhone-13-Pro_GEO_09162021_carousel.jpg.large.jpg",
+    "encoding": "7bit",
+    "mimetype": "image/jpeg",
+    "destination": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/products",
+    "filename": "image-1658092597133.jpg",
+    "path": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/products/image-1658092597133.jpg",
+    "size": 36175
+   },
+   {
+    "fieldname": "image",
+    "originalname": "iPhone-13-2.jpeg",
+    "encoding": "7bit",
+    "mimetype": "image/jpeg",
+    "destination": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/products",
+    "filename": "image-1658092597134.jpeg",
+    "path": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/products/image-1658092597134.jpeg",
+    "size": 30403
+   }
+  ]
+ },
+ {
+  "id": "e40c3e28-0fdc-4100-8d09-21e6137b8017",
+  "title": "Camiseta River Plate Tricolor 2022",
+  "price": "10999",
+  "currency": "AR$",
+  "category": "sports",
+  "description": "Camiseta suplente de River Plate Año 2018",
+  "images": [
+   {
+    "fieldname": "images",
+    "originalname": "tricolor2018-2.jpeg",
+    "encoding": "7bit",
+    "mimetype": "image/jpeg",
+    "destination": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/products",
+    "filename": "images-1658854673330.jpeg",
+    "path": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/products/images-1658854673330.jpeg",
+    "size": 909144
+   },
+   {
+    "fieldname": "images",
+    "originalname": "tricolor2018.jpeg",
+    "encoding": "7bit",
+    "mimetype": "image/jpeg",
+    "destination": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/products",
+    "filename": "images-1658854673337.jpeg",
+    "path": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/products/images-1658854673337.jpeg",
+    "size": 130444
+   }
+  ]
+ },
+ {
+  "title": "Frigobar Tecate",
+  "price": "15000",
+  "currency": "AR$",
+  "category": "home-article",
+  "description": "Frigobar, para explicarle a mi compañero javier, como se crea un producto.",
+  "id": "27bfa297-000c-4fa5-bc6e-c673601d8a7d",
+  "images": [
+   {
+    "fieldname": "image",
+    "originalname": "frigobar2.jpeg",
+    "encoding": "7bit",
+    "mimetype": "image/jpeg",
+    "destination": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/products",
+    "filename": "image-1659035402209.jpeg",
+    "path": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/products/image-1659035402209.jpeg",
+    "size": 24357
+   },
+   {
+    "fieldname": "image",
+    "originalname": "frigoibar1.webp",
+    "encoding": "7bit",
+    "mimetype": "image/webp",
+    "destination": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/products",
+    "filename": "image-1659035402210.webp",
+    "path": "/Users/rodrigoponce/Documents/DH/express-full-dh/public/img/products/image-1659035402210.webp",
+    "size": 39272
+   }
+  ]
+ }
+]

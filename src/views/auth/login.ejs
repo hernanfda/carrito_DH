@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+  <body>
+    <%- include('../partials/navbar') %>
+
+    <h3><%= title %></h3>
+
+    <form action="/users/login" method="POST">
+      <input type="email" name="email" placeholder="Email" />
+      <% if (locals.errors && locals.errors.email) { %>
+      <span class="error-msg"><%= locals.errors.email.msg %></span>
+      <% } %>
+
+      <input type="password" name="password" placeholder="Password" />
+      <% if (locals.errors && locals.errors.password) { %>
+      <span class="error-msg"><%= locals.errors.password.msg %></span>
+      <% } %> <% if(locals.error) { %>
+      <span class="error-msg"><%= locals.error %></span>
+      <% } %>
+      <br>
+      <label for="remember_me">Recordarme</label>
+      <input class="remember" type="checkbox" name="remember_me" id="remember_me" />
+
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin: 5px;
+  /* font-size: 26px; */
+}
+
+i {
+  color: #ffffff;
+  font-size: 24px;
+}

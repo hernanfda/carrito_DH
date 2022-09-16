@@ -1,0 +1,29 @@
+<nav>
+  <ul>
+    <li><a href="/">Inicio</a></li>
+    <li><a href="/products">Productos</a></li>
+    <% if(locals.user && locals.user.isAdmin == true) { %>
+      <li><a href="/products/create">Crear</a></li>
+    <% } %>
+  </ul>
+
+  <ul>
+    <% if (locals.user && locals.user) { %>
+        <li>
+          <a href="/users/logout">
+            <i class='bx bx-log-out-circle' ></i>
+          </a>
+        </li>
+    <% } else { %>
+    <li>
+      <a href="/users/login"><i class='bx bx-log-in-circle'></i></i></a>
+    </li>
+    <li><a href="/users/register"><i class='bx bx-id-card'></i></a></li>
+    <% } %>
+    <li>
+      <a href="/carrito">
+        <i class='bx bx-cart'></i>
+      </a>
+    </li>
+  </ul>
+</nav>

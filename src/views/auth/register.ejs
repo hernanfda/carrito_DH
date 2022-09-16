@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+  <body>
+    <%- include('../partials/navbar') %>
+    <h3>Registro</h3>
+    <form action="/users/register" method="POST" enctype="multipart/form-data">
+      <input
+        type="text"
+        name="userName"
+        placeholder="Nombre"
+        value="<%= locals.old && locals.old.userName ? locals.old.userName : '' %>"
+      />
+      <% if (locals.errors && locals.errors.userName) { %>
+      <span class="error-msg"><%= locals.errors.userName.msg %></span>
+      <% } %>
+
+      <input
+        type="text"
+        name="userLastName"
+        placeholder="Apellido"
+        value="<%= locals.old && locals.old.userLastName ? locals.old.userLastName : '' %>"
+      />
+      <% if (locals.errors && locals.errors.userLastName) { %>
+      <span class="error-msg"><%= locals.errors.userLastName.msg %></span>
+      <% } %>
+
+      <input
+        type="email"
+        name="userEmail"
+        placeholder="e-mail"
+        value="<%= locals.old && locals.old.userEmail ? locals.old.userEmail : '' %>"
+      />
+      <% if (locals.errors && locals.errors.userEmail) { %>
+      <span class="error-msg"><%= locals.errors.userEmail.msg %></span>
+      <% } %>
+
+      <input
+        type="password"
+        name="password"
+        placeholder="password"
+        value="<%= locals.old && locals.old.password ? locals.old.password : '' %>"
+      />
+      <% if (locals.errors && locals.errors.password) { %>
+      <span class="error-msg"><%= locals.errors.password.msg %></span>
+      <% } %>
+
+      <input type="file" name="avatar" />
+      <% if (locals.errors && locals.errors.avatar) { %>
+      <span class="error-msg"><%= locals.errors.avatar.msg %></span>
+      <% } %>
+
+      <button type="submit">Registrarse</button>
+    </form>
+  </body>
+</html>

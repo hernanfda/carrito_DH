@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head') %>
+  <body>
+    <%- include('../partials/navbar') %>
+
+    <h3>Formulario de Creacion de Producto</h3>
+
+    <form action="/products/create" method="post" enctype="multipart/form-data">
+      <% if (locals.errors && locals.errors.title) { %>
+      <span class="error-msg"><%= locals.errors.title.msg %></span>
+      <% } %>
+      <input
+        type="text"
+        placeholder="titulo"
+        name="title"
+        id="title"
+        value="<%= locals.old && locals.old.title ? locals.old.title : '' %>"
+      />
+
+      <% if (locals.errors && locals.errors.price) { %>
+      <span class="error-msg"><%= locals.errors.price.msg %></span>
+      <% } %>
+      <input type="number" placeholder="precio" name="price" id="price" />
+
+      <% if (locals.errors && locals.errors.currency) { %>
+        <span class="error-msg"><%= locals.errors.currency.msg %></span>
+        <% } %>
+      <select name="currency" id="currency">
+        <option value="">Elige una Moneda</option>
+        <option value="U$D">U$D</option>
+        <option value="AR$">AR$</option>
+      </select>
+
+      <% if (locals.errors && locals.errors.category) { %>
+        <span class="error-msg"><%= locals.errors.category.msg %></span>
+        <% } %>
+      <select name="category" id="category">
+        <option value="">Elige una Categoria</option>
+        <option value="technology">Tecnologia</option>
+        <option value="sports">Deportes</option>
+        <option value="clothes">Ropa</option>
+        <option value="home-article">Hogar</option>
+      </select>
+
+      <% if (locals.errors && locals.errors.description) { %>
+      <span class="error-msg"><%= locals.errors.description.msg %></span>
+      <% } %>
+      <textarea
+        placeholder="descripcion"
+        name="description"
+        id="description"
+      ></textarea>
+
+      <% if (locals.errors && locals.errors.images) { %>
+        <span class="error-msg"><%= locals.errors.images.msg %></span>
+        <% } %>
+      <input type="file" name="image" id="image" multiple />
+
+      <button type="submit">AGREGAR</button>
+    </form>
+  </body>
+</html>
