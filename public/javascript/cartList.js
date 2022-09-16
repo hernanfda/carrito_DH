@@ -37,7 +37,6 @@ window.addEventListener("load", (e) => {
             // console.log(button)
             button.addEventListener("click", (e) => {
                 const shoppingList = JSON.parse(localStorage.shoppingList);
-                const priceList = JSON.parse(localStorage.shoppingPrice);
                 // let indexToDelete;  --> Se puede borrar si no se trabaja con el indice
                 const filteredProduct = shoppingList.filter((prod) => {
                     // if (prod.id === shoppingList[i].id) {
